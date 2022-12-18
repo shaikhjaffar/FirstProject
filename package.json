@@ -1,6 +1,6 @@
 {
   "name": "1ClickCapital",
- "homepage": "https://shaikhjaffar.github.io/FirstProject",
+  "homepage": "https://shaikhjaffar.github.io/FirstProject",
   "version": "8.0.0",
   "private": true,
   "dependencies": {
@@ -142,5 +142,4 @@
     "react-error-overlay": "6.0.9",
     "postcss-custom-properties": "10.0.0"
   }
-
 }
