@@ -102,7 +102,7 @@ const options = [
                   className="navhm-links"
                   onClick={handleClicked}>
                   Product <span className='product-icons'><img src={Icon} style={{width: "20px",
-height: auto}}></img></span>
+height: "auto"}}></img></span>
                 </NavLink>
               </div>
               {isActive && (
