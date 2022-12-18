@@ -1,6 +1,6 @@
 import {React, useState, useEffect} from "react"
 import { Link} from 'react-router-dom'
-import image1 from '../calendar/Calendartopline2.png'
+// import image1 from '../calendar/1 click -Logo for Light BG 4.svg'
  function mainContent()  {
   const [error, setError] = useState(null)
   const [isLoaded, setIsLoaded] = useState(false)
@@ -26,7 +26,7 @@ import image1 from '../calendar/Calendartopline2.png'
   } else {
     return (
       items.map(blogs => (<div className="content-head" key={blogs.id} >
-      <img className="blog-image-head"  src={blogs.id !== 1268 ? blogs.yoast_head_json.og_image[0].url : image1 } alt='image'></img>
+      <img className="blog-image-head"  src={blogs.yoast_head_json.og_image[0].url} alt='image'></img>
     <div className="blog-head-container">
       <h1 className="blog-title-head">
        {blogs.title.rendered}

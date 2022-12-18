@@ -20,6 +20,7 @@ import HRm from './@core/components/Nested/components/HRMS'
 import Production from './@core/components/Nested/components/Entertement'
 import SalaryAdv1 from './@core/components/Nested/components/SalaryAdvance'
 import ReadMore from "./views/blog/read-more/index"
+import PagenotFound from "./pages/PageNotFound/norfound"
 function App() {
   const [error, setError] = useState(null)
   const [isLoaded, setIsLoaded] = useState(false)
@@ -38,11 +39,12 @@ function App() {
       }
     )
   }, [])
-  if (error) {
-    return <div>Error: {error.message}</div>
-  } else if (!isLoaded) {
-    return <div>Loading...</div>
-  } else {
+  // if (error) {
+  //   return <div>Error: {error.message}</div>
+  // } else if (!isLoaded) {
+  //   return <div>Loading...</div>
+  // } else {
+    console.log(error, isLoaded)
     return (
                   <div className="App" id="outer-container">
                   <Sidebar pageWrapId={'page-wrap'} outerContainerId={'outer-container'} />
@@ -67,15 +69,14 @@ function App() {
               items.map((data => (
                 <Route path={`/blogs/${data.slug}`} key={data.id}  element={<ReadMore/>}/>
               )))}
+                 <Route path='*' element={<PagenotFound />}/>
                   <Route path='/carrer' element={<Stats/>} />
             <Route path='/about-us' element={<About/>} />
             <Route path='/contact-us' element={<Contactus/>} />
         </Routes>
         </div>
       </div>
-                )
+   )
   }
   
-}
-
 export default App

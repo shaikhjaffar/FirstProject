@@ -84,7 +84,8 @@ function Navdd() {
               Product
               </NavLink></div>
         {isActive && (
-        <div className='Nav-dd-data'>
+    
+        <div className='hover-data'>
             {options.map((option) => (
                <div 
                className='Nav-dd-item'key ={option.id}>
@@ -100,6 +101,8 @@ function Navdd() {
             </div>
             ))}
         </div>
+
+     
         )}
     </div>
   )

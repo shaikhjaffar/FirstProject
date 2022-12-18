@@ -50,13 +50,13 @@ class Award extends React.Component {
                 <span className="award-row">
                     <div className="award-column">
                     <div className='container1'>
-                            <img className='logoholder' src={LogoHolder} alt="Logo holder"/>
+                            <img className='logoholder' src={LogoHolder}/>
                             <img className='imagesize' src={Award1} alt="BigCo Inc. logo"/>
                         </div>
                     </div>
                     <div className="award-column">
                         <div className='container1'>
-                            <img className='logoholder' src={LogoHolder} alt="Logo holder"/>
+                            <img className='logoholder' src={LogoHolder}/>
                             <img className='imagesize' src={Award2} alt="BigCo Inc. logo"/>
                         </div>
                     </div>

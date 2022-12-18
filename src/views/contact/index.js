@@ -11,77 +11,85 @@ import LinkedIn from './images/LinkedIn.png'
 import Twitter from './images/Twitter.png'
 import Form from "../../@core/components/hori-form"
 import Button from "../../@core/components/button/Button"
+import { NavLink } from 'react-router-dom'
 function Contact () {
         return (
             <div className='main-footer card'>
               <Button/>
                  <Form/>
-            <div className='Style11'>
-               <p className='Contact-style1'>If you are looking  for speed and ease for raising capital,<br /> you have came to the right place</p>
-             </div>    
-             <div className='Rectangle'>
-               <img  src={Rect1} alt="BigCo Inc. logo" className="footer-rectangle-top"/> 
-             </div>
-             <div className='rowfootor'>
-               <div className='colfootor'>
-                 <h2 className='colfootor-h2'>  Quick Links  </h2>
-                 <a href=""> Home</a><br></br>
-                 <a href="">About</a><br></br>
-                 <a href="">Our Products</a>
-               </div>
-               <div className='colfootor'>
-                 <h2 className='colfootor-h2'>  Other Links  </h2>
-                 <a href=""> Privacy policy</a><br></br>
-                 <a href="">Trems & Condition</a><br></br>
-                 <a href="">Career</a><br></br>
-                 <a href="">Contact Us</a>
-               </div>
-               <div className='colfootor'>
-                 <h2 className='colfootor-h2'>  Our Address </h2>
-                 <a href="">701-702 Wing A, Supreme Business Park,
-                 Hiranandaini gardens,
-                 Powai, Mumbai,
-                 Maharashtra 400076</a>
-               </div>
-               <div className='colfootor'>
-                 <h2 className='colfootor-h2'> Mail_id  </h2>
-                 <a href="">contactus@1clickcapital.com</a><br></br>
-                 <a href="">grievance@1clickcapital.com</a>
-               </div>
-               <div className='colfootor contactno'>
-                 <h2 className='colfootor-h2'>  Contact Number  </h2>
-                 <a href=""> 180 0532 5200</a>
-               </div>
-             </div>
-             <div className='Rectangle'>
-               <img className='footer-rectangle-bottom' src={Rect1} alt="BigCo Inc. logo"/>  
-             </div>
-             <div className='footer-logo-sm rowfootor'>
-               <div className='footer-logo colfootor'>
-                 <a href=""><img src={Instagram} alt="BigCo Inc. logo" className='sm-logo'/></a>
-               </div>
-               <div className='footer-logo colfootor'>
-                 <a href=""><img src={Facebook} alt="BigCo Inc. logo" className='sm-logo'/></a>
-               </div>
-               <div className='footer-logo colfootor'>
-                 <a href=""><img src={LinkedIn} alt="BigCo Inc. logo" className='sm-logo'/></a>
-               </div>
-               <div className='footer-logo colfootor'>
-                 <a href=''><img src={Twitter} alt="BigCo Inc. logo" className='sm-logo'/></a>
-               </div>
-             </div>
-               <div className='Style1'>
-               <div className='smallrect'></div>
-               </div>
-               <div className='Style1'>
-                 <p className="footer-style1">Copyright @ 2022 1 click Capital. All Rights Reserved Powered by C H P FINANCE PRIVATE LIMITED</p>
-               </div>
-               {/* <div className='Style1'>
-               <div className='smallcircle'></div>
-               </div> */}
-               {/* <div className='Style1'>
-               <img  className="Footimageplace" src={Foot} alt="BigCo Inc. logo"/>
-               </div> */}
+                 <div className='Stylecont'>
+          <p className='footer-style1'>If you are looking  for speed and ease for raising capital,<br /> you have came to the right place</p>
+        </div>    
+        <div className='Rectangle'>
+          <img  src={Rect1} alt="BigCo Inc. logo" className="footer-rectangle-top"/> 
+        </div>
+        <div className='rowfootor'>
+          <div className='colfootor'>
+            <h2 className='colfootor-h2'>  Quick Links  </h2>
+            <a href="#home" className='footor-text'> Home</a><br></br>
+            <a  ><NavLink
+            exact
+               to="/about-us" className='footor-text'>About
+              </NavLink></a><br></br>
+            <a  ><NavLink
+            exact
+               to="/product/payroll" className='footor-text'>Our Product
+              </NavLink></a>
+          </div>
+          <div className='colfootor'>
+            <h2 className='colfootor-h2'>  Other Links  </h2>
+            <a href=""  className='footor-text'> Privacy policy</a><br></br>
+            <a href="" className='footor-text'>Trems & Condition</a><br></br>
+            <a  ><NavLink
+            exact
+               to="/carrer" className='footor-text'>Career
+              </NavLink></a><br></br>
+            <a  ><NavLink
+            exact
+               to="/contact-us" className='footor-text'>Contact us
+              </NavLink></a>
+          </div>
+          <div className='colfootor colfootor2'>
+            <h2 className='colfootor-h2'>  Our Address </h2>
+            <a  className='footor-text' href="https://www.google.com/maps/place/1+Click+Capital/@19.1113219,72.9080361,15z/data=!4m5!3m4!1s0x0:0xe932828b9f7ade92!8m2!3d19.1113219!4d72.9080361">701-702 Wing A, Supreme Business Park,
+            Hiranandaini gardens,
+            Powai, Mumbai:400076,
+            Maharashtra</a>
+          </div>
+          <div className='colfootor colfootor2'>
+            <h2 className='colfootor-h2'> Contact Details  </h2>
+            <a href=""  className='footor-text'> 180 05325 200</a><br></br>
+            <a href="mailto:contactus@1clickcapital.com"  className='footor-text'>contactus@1clickcapital.com</a><br></br>
+            <a href="mailto:grievance@1clickcapital.com"  className='footor-text'>grievance@1clickcapital.com</a>
+          </div>
+          {/* <div className='colfootor contactno'>
+            <h2 className='colfootor-h2'>  Contact Number  </h2>
+            
+          </div> */}
+        </div>
+        <div className='Rectangle'>
+          <img className='footer-rectangle-bottom' src={Rect1} alt="BigCo Inc. logo"/>  
+        </div>
+        <div className='footer-logo-sm rowfootor-logo'>
+          <div className='footer-logo colfootor-logo'>
+            <a href="https://www.instagram.com/1clickcapital/"><img src={Instagram} alt="BigCo Inc. logo" className='sm-logo'/></a>
+          </div>
+          <div className='footer-logo colfootor-logo'>
+            <a href=" https://www.facebook.com/1clickcapital"><img src={Facebook} alt="BigCo Inc. logo" className='sm-logo'/></a>
+          </div>
+          <div className='footer-logo colfootor-logo'>
+            <a href="https://www.linkedin.com/company/1-click-capital/mycompany/"><img src={LinkedIn} alt="BigCo Inc. logo" className='sm-logo'/></a>
+          </div>
+          <div className='footer-logo colfootor-logo'>
+            <a href='https://twitter.com/1clickcapital'><img src={Twitter} alt="BigCo Inc. logo" className='sm-logo'/></a>
+          </div>
+        </div>
+          <div className='Style1'>
+          <div className='smallrect'></div>
+          </div>
+          <div className='Style1'>
+            <p className="footer-style1">Copyright @ 2022 1 click Capital. All Rights Reserved Powered by C H P FINANCE PRIVATE LIMITED</p>
+          </div>
              </div>
         )
 }

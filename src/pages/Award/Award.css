@@ -10,7 +10,7 @@
   font-family: 'Futura Md BT','sans-serif';
   font-style: italic;
   font-weight: 600;
-  font-size: 4vw;
+  font-size: 3.5vw;
   background-image: -webkit-linear-gradient(160deg, #4b4b4b 30.92%, #FFFFFF 48.36%, #4b4b4b 68.09%);
   -webkit-background-clip: text;
   background-clip: text;
@@ -18,7 +18,7 @@
   background-size: 80%;
   animation: animate 6s linear infinite;
   -webkit-text-fill-color: rgba(255, 255, 255, .1);
-  width:80%;
+  width:70%;
   z-index: -1;
   margin-top: 8%;
  }
@@ -34,7 +34,7 @@
   }
  }
  .container1 {
-    width: 100%;
+    width: 80%;
     position:relative;
     height: auto;
     display: flex;
@@ -51,9 +51,8 @@
   width:85%;
  }
 .award-column {
-  float: left;
   width: 50%;
-  display: grid;
+  display: flex;
   align-items: center;
   justify-content: center;
 }

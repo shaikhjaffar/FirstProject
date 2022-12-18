@@ -21,7 +21,6 @@ function Button3() {
             <p className="enroll-text">Avail the Loan Selecting the EMI Option</p>
          </div>
         </div>
-       <span className="circle-product"></span>
         <p className="Common-word-product"> HOW IT WORKS</p>
         <div className="rectline2"></div>
     </div>

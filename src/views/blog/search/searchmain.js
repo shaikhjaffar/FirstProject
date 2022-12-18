@@ -1,6 +1,6 @@
 import {React, useState, useEffect} from "react"
 import { Link} from 'react-router-dom'
-import image1 from '../calendar/Calendartopline2.png'
+import image1 from '../calendar/1 click -Logo for Light BG 4.svg'
 import  Id from './index'
  export default function searchMain(props)  {
   const [error, setError] = useState(null)
@@ -27,7 +27,7 @@ import  Id from './index'
   if (error) {
     return <div>Error: {error.message}</div>
   } else if (!isLoaded) {
-    return <div>Loading...</div>
+    return <div></div>
   } else {
     return (
       <div className="content-head" key={items.id} >

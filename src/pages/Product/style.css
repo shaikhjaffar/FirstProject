@@ -2,6 +2,9 @@
   .card1-div{
      margin-left: 25vw;
   }
+  body{
+    overflow-x: hidden;
+  }
   .product-content-container{
     background:rgba(255, 255, 255, 0);  
     padding: 15px;
@@ -232,6 +235,9 @@ display: none;
   .card1-div{
     margin-left: 8%;
     display: grid;
+ }
+ .zoomout{
+  margin-left: -10%;
  }
  .product-round-corners-title {
   border-radius: 100px 100px 100px 100px;

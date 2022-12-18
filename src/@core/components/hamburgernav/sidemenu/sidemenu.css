@@ -4,8 +4,9 @@
   width: 36px;
   height: 15px;
   margin-left: 3vw;
-  margin-top: 2vw;
+  margin-top: 4%;
   display: none;
+
 }
 
 /* Color/shape of burger icon bars */
@@ -17,16 +18,16 @@
 
 
 /* Position and sizing of clickable cross button */
-.bm-cross-button {
+/* .bm-cross-button {
   height: 24px;
   width: 24px;
   margin-right: 50%;
-}
+} */
 
 /* Color/shape of close button cross */
-.bm-cross {
+/* .bm-cross {
   background:#2FC4CE ;
-}
+} */
 
 /*
 Sidebar wrapper styles

@@ -121,6 +121,7 @@ function SecondPage() {
                 </li>     
     </ul>
     <Outlet />
+  
      </div>
   )
 }

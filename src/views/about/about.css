@@ -1,4 +1,4 @@
- 
+
 .content-container-gap{
   position: relative;
     background:rgba(255, 255, 255, 0);  
@@ -112,6 +112,34 @@ margin-top: 7px;
     
     }
 } */
+.advisor-heading{
+  position: relative;
+  font-family: 'Futura Md BT','sans-serif';
+  font-style: italic;
+  font-weight: 600;
+  font-size: 4vw;
+  background-image: -webkit-linear-gradient(160deg, #4b4b4b 30.92%, #FFFFFF 48.36%, #4b4b4b 68.09%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-repeat: initial;
+  background-size: 80%;
+  animation: animate 6s linear infinite;
+  -webkit-text-fill-color: rgba(255, 255, 255, .1);
+  width:80%;
+  margin-top: 8%;
+margin-left: 36%;
+}
+@keyframes animate
+{
+ 0%
+ {
+   background-position: -500%;
+ }
+ 100%
+ {
+   background-position: 500%;
+ }
+}
 @media  screen and (max-width:1000px) {
   .content-container-gap{
      display: flex;
@@ -128,7 +156,7 @@ margin-top: 7px;
 }
 }
 .about-image{
-  width: 50%;
+  width: 40%;
   min-width: 300px;
 }
  .detail-about{
@@ -139,10 +167,21 @@ margin-top: 7px;
 }
 .about-text{
 width: 60%;
-margin-top: -9%;
+margin-top: -8%;
 margin-left: 20%;
 font-size: 95%;
 }
+/* .right{
+  margin-left: 50%;
+} */
+.Buttonfin{
+  width: 60%;
+  margin-left: 20%;
+}
+html,body{
+  overflow-x: hidden;
+}
+
 @media screen and (max-width: 550px) {
   .about-text{
     font-size: 60%;

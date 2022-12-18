@@ -3,6 +3,7 @@ import { slide as Menu } from 'react-burger-menu'
 import './sidemenu.css'
 import { Link, NavLink } from "react-router-dom"
 import './navprodd.css'
+import Icon from './down.png'
 const Sidebar = () => {
 const options = [
     {
@@ -69,16 +70,24 @@ const options = [
   const [isActive, setIsActive] = useState(false)
   const [isclicked, setClicked] = useState(false)
   const handleClicked = () => setClicked(!isclicked)
+
+
   const [click, setClick] = useState(false)
-  const handleClick = () => setClick(!click)
+  //  const handleClick = () => setClick(!click)
+  const [show, setShow] = useState(false)
+  function handleClick() {
+    setClick(!click)
+    setShow(!show)
+  }
   return (
     <Menu>
-            <a className="menu-item">
+            <a className="menu-item" >
               <NavLink
                 exact
                 to="/"
                 activeClassName="active"
                 onClick={handleClicked}
+                
               >
                 Home
               </NavLink>
@@ -86,13 +95,14 @@ const options = [
             <div className={isActive === true ? "Navhmtitle  Navhmactive" : "Navhmtitle"}
               onClick={() => setIsActive(!isActive)} 
               >
-              <div className="Navhm-dd-title">
+              <div className="Navhm-dd-title ">
                 <NavLink
                   exact
                   to="/product/payroll"
                   className="navhm-links"
                   onClick={handleClicked}>
-                  Product <span className='product-icons'>&#129179;</span>
+                  Product <span className='product-icons'><img src={Icon} style={{width: "20px",
+height: auto}}></img></span>
                 </NavLink>
               </div>
               {isActive && (

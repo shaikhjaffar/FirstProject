@@ -126,6 +126,10 @@
   .Feature-text{
     width: 130%;
   }
+  .Feature-comp{
+    width: 35%;
+    height: 180px;
+  }
 }
 @media screen and (max-width:700px) {
 

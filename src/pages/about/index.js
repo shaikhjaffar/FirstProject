@@ -1,18 +1,19 @@
-import React, { useState, useRef, useEffect } from "react"
+import React, {useRef, useEffect } from "react"
 // import { NavLink } from "react-router-dom"
 import "@styles/base/components/_card.scss"
 // import {  } from "react"
 // import Heading from "../../@core/components/headingeffect"
-import { NavLink } from "react-router-dom"
+// import { NavLink } from "react-router-dom"
 import Rectangle from './rectangle.png'
 import { gsap } from "gsap"
+import ButtonsFin from '../../views/about/Group 76 1.svg'
 import { ScrollTrigger } from "gsap/ScrollTrigger"
 gsap.registerPlugin(ScrollTrigger)
 import "./style.css"
 function About() {
-  const [click, setClick] = useState(false)
+  // const [click, setClick] = useState(false)
 
-  const handleClick = () => setClick(!click)
+  // const handleClick = () => setClick(!click)
   function HeadingAbout() {
     const headingref = useRef(null)
     useEffect(() => {
@@ -39,7 +40,7 @@ function About() {
           <div class="wordmark-title-about"></div>
           <div class="title-rect1-about"></div>
           <div class="title-rect2-about"></div>
-          <img className="rectangle-titlesvg-about" src={Rectangle} alt="BigCo Inc. logo"/>
+          <img className="rectangle-titlesvg-about" src={Rectangle}/>
         </div>
     )
   }
@@ -51,13 +52,21 @@ function About() {
                 <p className='text1underline'> Breaking New Ground Every Day </p>
                 <p className='text2center'> Listening to the Financial Needs of Businesses and Simplifying Payroll Funding for Digital India.</p>
               </div>
-            <div className='text3Bold'>
+              <div className='text1underline'>
+  <p>Our MISION</p>
+  </div>
+  <div className='text2center'>
+    <p>To create a business friendly way of leveraging capital to help
+       individuals and institutions amid financial crises</p>
+    </div>
+    <img className='Buttonfin' src={ButtonsFin} alt="button"></img>
+            {/* <div className='text3Bold'>
               <p> India’s first ever digital portal to offer payroll funding, making every business owner’s dream<br></br>
                possible through everyday capital realities.</p>
             </div>
             <div className='text4'>
               <p>1 Click Capital is on a mission to change the way businesses in our country access the funding they need to pay their employees and sustain<br>
-              </br> their business.</p></div>
+              </br> their business.</p></div> */}
         
               <div className='text5'>
                 {/* <p>
@@ -72,7 +81,7 @@ function About() {
         and the expert industry advice we received from our mentors turned our dream into a reality.<br>
         </br>We have since tied up with over 400 corporates and around 3750 individuals whom we have seamlessly financed and helped to revolutionize their journeys.
                 </p> */}
-                 <button className="read-button">
+                 {/* <button className="read-button">
                <NavLink
                exact
                to="/about-us"
@@ -80,7 +89,7 @@ function About() {
                 className="read-more"
              >
               Read more
-             </NavLink></button>
+             </NavLink></button> */}
               </div>
               </div>
         )

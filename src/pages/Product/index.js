@@ -41,7 +41,7 @@ const { useRef, useEffect } = React
           <div class="wordmark-title-product"></div>
           <div class="title-rect1-product"></div>
           <div class="title-rect2-product"></div>
-          <img className="rectangle-titlesvg-product" src={Rectangle} alt="BigCo Inc. logo"/>
+          <img className="rectangle-titlesvg-product" src={Rectangle}/>
         </div>
     )
   }
@@ -73,7 +73,7 @@ function Product () {
                 <h4 className="product-round-corners-title">Payroll</h4>
                 <div className="product-round-circle">
                   <div className="product-round-circle1">
-                     <img className="product-pro-image" src={Payroll} alt="BigCo Inc. logo"/>
+                     <img className="product-pro-image" src={Payroll}/>
                   </div>
                 </div> 
                 <p className=" product-round-corners-text">1 Click Payroll is an industry-first, low-cost, unsecured, short-term funding solution that assists corporates in meeting their payroll obligations on time.</p>
@@ -82,7 +82,7 @@ function Product () {
                 <h4 className="product-round-corners-title">Salary Advance</h4>
                 <div className="product-round-circle">
                   <div className="product-round-circle1">
-                     <img className="product-pro-image" src={Salary} alt="BigCo Inc. logo"/>
+                     <img className="product-pro-image" src={Salary}/>
                   </div>
                 </div>
                 <p className=" product-round-corners-text">It is a short-term loan usually paid back within 2 to 3 months. It gives immediate access to liquidity when an employee is in a need of contingency salary.</p>
@@ -92,7 +92,7 @@ function Product () {
                 <h4 className="product-round-corners-title">Insurance Funding</h4>
                 <div className="product-round-circle">
                   <div className="product-round-circle1">
-                       <img className="product-pro-image" src={Insurance} alt="BigCo Inc. logo"/>
+                       <img className="product-pro-image" src={Insurance}/>
                   </div>
                 </div>
                 <p className=" product-round-corners-text">1 Click Insurance Funding offers loans to individuals against the surrender value of their insurance policies. It also offers loans to individuals for paying their insurance premiums.</p> 
@@ -102,7 +102,7 @@ function Product () {
                 <h4 className="product-round-corners-title">Project Funding</h4>
                 <div className="product-round-circle">
                   <div className="product-round-circle1">
-                    <img className="product-pro-image" src={Project} alt="BigCo Inc. logo"/>
+                    <img className="product-pro-image" src={Project}/>
                   </div>
                 </div>
                 <p className=" product-round-corners-text">1 Click Capital’s Project Funding is a complete financial solution to fund your project start to end.</p>
@@ -112,7 +112,7 @@ function Product () {
                 <h4 className="product-round-corners-title">L.R.D</h4>
                 <div className="product-round-circle">
                   <div className="product-round-circle1">
-                     <img className="product-pro-image" src={LRD} alt="BigCo Inc. logo"/>
+                     <img className="product-pro-image" src={LRD}/>
                   </div>
                 </div>
 
@@ -122,7 +122,7 @@ function Product () {
                 <h4 className="product-round-corners-title">SCF</h4>
                 <div className="product-round-circle">
                   <div className="product-round-circle1">
-                      <img className="product-pro-image" src={SCF} alt="BigCo Inc. logo"/>
+                      <img className="product-pro-image" src={SCF}/>
                   </div>
                 </div>
                 <p className=" product-round-corners-text">Supply Chain Financing (SCF) is a combination of technology based financing that lowers cost and improves competency for all parties involved. It funds the entire line of supply chain aspects.</p>
@@ -132,7 +132,7 @@ function Product () {
                 <h4 className="product-round-corners-title">Working Capital</h4>
                 <div className="product-round-circle">
                   <div className="product-round-circle1">
-                      <img className="product-pro-image" src={Working} alt="BigCo Inc. logo"/>
+                      <img className="product-pro-image" src={Working}/>
                   </div>
                 </div>
                 <p  className=" product-round-corners-text">Working capital is that money used to conduct the day to day functions and operations of a business. Get funding to support the everyday requirements of day to day business.</p>
@@ -142,7 +142,7 @@ function Product () {
                 <h4 className="product-round-corners-title"> MSME/SME Loan</h4>
                 <div className="product-round-circle">
                   <div className="product-round-circle1">
-                     <img className="product-pro-image" src={CR} alt="BigCo Inc. logo"/>
+                     <img className="product-pro-image" src={CR}/>
                   </div>
                 </div>
                 <p  className=" product-round-corners-text">1 Click Capital’s Collateral free MSME or SME loan is a credit service offered to micro, small or medium enterprises without putting down assets for collateral to raise funds.</p>
@@ -152,16 +152,16 @@ function Product () {
                 <h4 className="product-round-corners-title">HRMS </h4>
                 <div className="product-round-circle">
                   <div className="product-round-circle1">
-                      <img className="product-pro-image" src={HRm} alt="BigCo Inc. logo"/>
+                      <img className="product-pro-image" src={HRm}/>
                     </div>
                   </div>
                   <p  className=" product-round-corners-text">Human Resources Management System or HRMS refers to a combination of software and services that deals with 360 degree of internal Human Resources functions throughout an employees work cycle.</p>
                 </div>
                 <div className="product-content-container zoomout fadeOut">
-                <h4 className="product-round-corners-title">E&PF</h4>
+                <h4 className="product-round-corners-title">Entertainment & Project Funding</h4>
                 <div className="product-round-circle">
                   <div className="product-round-circle1">
-                      <img className="product-pro-image" src={Production} alt="BigCo Inc. logo"/>
+                      <img className="product-pro-image" src={Production}/>
                     </div>
                   </div>
                   <p  className=" product-round-corners-text">1 Click Capital’s Entertainment & Project Funding (E&PF) is a complete financial solution to fund

@@ -9,9 +9,9 @@ import indiapress from './IndiaPress-removebg-preview.png'
 import "./style.css"
 function Marqueee() {
     return (
-        <>    
+        <> 
+        <div className="card1">   
         <div className="slider">
-
         <a href="https://www.zeebiz.com/agencies/1-click-payroll-a-new-age-payroll-financing-solution-200339/amp"><img src={ZeeB} className="size" ></img></a>
         
         <a href="https://english.newstracklive.com/news/what-is-payroll-financing-how-can-it-benefit-growing-businesses-sc18-nu346-1251534-1.html"><img src={newslogo} className="image1" ></img></a>
@@ -26,6 +26,7 @@ function Marqueee() {
         
         <a href="https://indiapressrelease.com/featured/consequences-of-running-payroll-late-and-how-1-click-capital-can-help/"><img src={indiapress} className="image1" ></img></a>
         
+        </div>
         </div>
         </>
     )

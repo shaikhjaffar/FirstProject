@@ -31,6 +31,7 @@ function Calendarstyle() {
      first = ms.name
     }
   })
+  { console.log(isLoading, err) }
   const [name, setName] = useState(first)
       const handleClick2 = async (month) => {
             setIsLoading(true)
@@ -196,9 +197,9 @@ function Calendarstyle() {
           <h4 className='Month-Name' onClick={() => mstate.map((ms) => { if (ms.id === 12) setName(ms.name) })}>Dec</h4>
         </div>
       </div>  
-      {console.log(isLoading, err)}
-
-    { data.length !== 0 ? data.map((blogs) => (
+     
+     {/* {data.length === 0 ? setIsLoading(true) : setIsLoading(false)} */}
+    {data.length !== 0 ? data.map((blogs) => ( 
           <div className="content-head" key={blogs.id} >
           <img className="blog-image-head"  src={blogs.yoast_head_json.og_image[0].url}></img>
         <div className="blog-head-container">
@@ -212,7 +213,7 @@ function Calendarstyle() {
         </div>
      </div>
         )
-      ) : <> post in this month  </>}  
+      ) : <></>} 
       </>
   )
 }

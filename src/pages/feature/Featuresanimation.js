@@ -37,7 +37,7 @@ function HeadingFeature() {
                 <div class="wordmark-title-feature"></div>
                 <div class="title-rect1-feature"></div>
                 <div class="title-rect2-feature"></div>
-                <img className="rectangle-titlesvg-feature" src={Rectangle} alt="BigCo Inc. logo"/>
+                <img className="rectangle-titlesvg-feature" src={Rectangle} />
             </div>
     )
   }

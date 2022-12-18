@@ -3,7 +3,7 @@ import React from "react"
 // import HorizontalNavMenuItems from "./HorizontalNavMenuItems"
 import './style.css'
 import { gsap } from "gsap"
-import svg from './Group 175 (1).svg'
+import svg from './Group 188logo.svg'
 const {useLayoutEffect, useRef } = React
 const Logo = () => {
   const app = useRef()
@@ -15,7 +15,7 @@ const Logo = () => {
    })
   return (
     <div ref={app}>
-      <img   src={svg} className="navsvg" alt="jaffar"/>
+      <img   src={svg} className="navsvg"/>
     </div>
   )
 }

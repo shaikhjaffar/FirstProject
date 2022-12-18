@@ -6,6 +6,7 @@ import Collab from "../pages/Collab/index"
 import Stats from "../pages/stats/index"
 import MainPage from "../pages/MainPage/index"
 import Footer from "../pages/Footer/Footer"
+import Marqueee from "../@core/components/marquee"
 // import RippleButton from "../@core/components/ripple-button/index"
 const Home = () => {
   return (
@@ -17,6 +18,7 @@ const Home = () => {
    <Award/>
    <Collab/>
    <Stats/>
+   <Marqueee/>
    <Footer/>
    </>
   )
